@@ -1,0 +1,26 @@
+{
+  "name": "@job-engine-scrapers/scraper-justjoin-it",
+  "version": "1.0.1",
+  "private": true,
+  "type": "commonjs",
+  "description": "Scrapes JustJoin.it — Polish IT job board with rich API data (skills, salary, location, experience level)",
+  "main": "index.js",
+  "dependencies": {
+    "@job-engine-scrapers/core": "^1.0.0"
+  },
+  "keywords": [
+    "job-scraper",
+    "justjoin_it",
+    "job-automation"
+  ],
+  "jobEngine": {
+    "displayName": "JustJoin.it",
+    "capabilities": [
+      "api"
+    ],
+    "needsBrowser": false,
+    "dataRichness": "high",
+    "category": "polish",
+    "homepage": ""
+  }
+}

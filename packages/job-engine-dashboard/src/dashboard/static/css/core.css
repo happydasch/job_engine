@@ -1,0 +1,88 @@
+/* ==========================================================================
+   Job Engine Dashboard — Core Styles
+   Variables, Reset, Utilities
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. CSS Variables & Reset
+   -------------------------------------------------------------------------- */
+:root {
+  --bg: #f8f9fa;
+  --surface: #ffffff;
+  --primary: #2563eb;
+  --primary-light: #3b82f6;
+  --success: #16a34a;
+  --warning: #f59e0b;
+  --danger: #dc2626;
+  --text: #1e293b;
+  --text-secondary: #64748b;
+  --border: #e2e8f0;
+  --shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+  --radius: 8px;
+  --primary-03: rgba(37, 99, 235, 0.03);
+  --primary-04: rgba(37, 99, 235, 0.04);
+  --primary-08: rgba(37, 99, 235, 0.08);
+  --primary-10: rgba(37, 99, 235, 0.10);
+  --primary-12: rgba(37, 99, 235, 0.12);
+  --primary-15: rgba(37, 99, 235, 0.15);
+  --primary-18: rgba(37, 99, 235, 0.18);
+  --success-10: rgba(22, 163, 74, 0.1);
+  --muted: #94a3b8;
+  --gray-100: #f1f5f9;
+  --focus-ring: 0 0 0 3px var(--primary-15);
+
+  /* Vue 3 SPA aliases — maps Vue scoped variable names to existing theme */
+  --color-bg-card: var(--surface);
+  --color-border: var(--border);
+  --color-text: var(--text);
+  --color-text-secondary: var(--text-secondary);
+  --color-primary: var(--primary);
+  --color-primary-light: #eff6ff;
+  --color-bg-hover: var(--gray-100);
+  --color-bg: var(--bg);
+
+  /* Profile category colors — unified across sidebar and AI analysis */
+  --color-profile-behavioral: #16a34a;
+  --color-profile-behavioral-bg: rgba(22, 163, 74, 0.08);
+  --color-profile-goal: #7c3aed;
+  --color-profile-goal-bg: rgba(139, 92, 246, 0.08);
+  --color-profile-boosted: #b45309;
+  --color-profile-boosted-bg: rgba(245, 158, 11, 0.12);
+  --color-bg-subtle: #f1f5f9;
+
+  /* Score tier colors — single source of truth for match score ring/badge/chart */
+  --score-low: #f97316;
+  --score-med: #f59e0b;
+  --score-high: #22c55e;
+  --score-top: #3b82f6;
+
+  /* Semantic accents */
+  --color-favorite: #d97706;
+  --color-ai: #8b5cf6;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Links */
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Shared field label pattern — uppercase, semibold, secondary color */
+.field-label,
+.profile-field .field-label,
+.detail-field .detail-field-label,
+.ai-card .ai-section-title {
+  color: var(--text-secondary);
+}
+

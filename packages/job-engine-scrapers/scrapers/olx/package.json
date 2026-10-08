@@ -1,0 +1,21 @@
+{
+  "name": "@job-engine-scrapers/scraper-olx",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "main": "index.js",
+  "dependencies": {
+    "@job-engine-scrapers/core": "1.0.0"
+  },
+  "jobEngine": {
+    "displayName": "OLX",
+    "capabilities": [
+      "fetch"
+    ],
+    "needsBrowser": false,
+    "dataRichness": "low",
+    "category": "polish",
+    "homepage": ""
+  },
+  "description": "Scrapes OLX — classifieds/jobs platform for Poland"
+}

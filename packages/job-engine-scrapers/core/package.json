@@ -1,0 +1,16 @@
+{
+  "name": "@job-engine-scrapers/core",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "description": "Shared utilities for job scrapers (interface, registry, fetch, skills, salary, etc.)",
+  "main": "index.js",
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "js-yaml": "^5.2.1",
+    "playwright": "^1.55.0",
+    "playwright-extra": "^4.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "undici": "^7.28.0"
+  }
+}

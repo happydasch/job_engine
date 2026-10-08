@@ -1,0 +1,21 @@
+{
+  "name": "@job-engine-scrapers/scraper-pracuj",
+  "version": "1.0.1",
+  "private": true,
+  "type": "commonjs",
+  "main": "index.js",
+  "dependencies": {
+    "@job-engine-scrapers/core": "^1.0.0"
+  },
+  "jobEngine": {
+    "displayName": "Pracuj.pl",
+    "capabilities": [
+      "browser"
+    ],
+    "needsBrowser": true,
+    "dataRichness": "low",
+    "category": "polish",
+    "homepage": ""
+  },
+  "description": "Scrapes Pracuj.pl — Poland's largest job board"
+}

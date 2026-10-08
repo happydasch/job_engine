@@ -1,0 +1,21 @@
+{
+  "name": "@job-engine-scrapers/scraper-solidjobs",
+  "version": "1.0.1",
+  "private": true,
+  "type": "commonjs",
+  "main": "index.js",
+  "dependencies": {
+    "@job-engine-scrapers/core": "^1.0.0"
+  },
+  "jobEngine": {
+    "displayName": "Solid.jobs",
+    "capabilities": [
+      "api"
+    ],
+    "needsBrowser": false,
+    "dataRichness": "high",
+    "category": "polish",
+    "homepage": ""
+  },
+  "description": "Scrapes solid.jobs — Polish IT job board with rich API data"
+}

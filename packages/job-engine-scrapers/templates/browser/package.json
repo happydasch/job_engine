@@ -1,0 +1,20 @@
+{
+  "name": "@job-engine-scrapers/scraper-{{kebabId}}",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "main": "index.js",
+  "description": "Scrapes {{displayName}} — TODO: add description",
+  "dependencies": {
+    "@job-engine-scrapers/core": "^1.0.0"
+  },
+  "keywords": ["job-scraper", "{{id}}", "job-automation"],
+  "jobEngine": {
+    "displayName": "{{displayName}}",
+    "capabilities": ["browser"],
+    "needsBrowser": true,
+    "dataRichness": "medium",
+    "category": "custom",
+    "homepage": ""
+  }
+}

@@ -1,0 +1,42 @@
+# Git
+.git/
+.gitattributes
+.gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.tox/
+
+# Node
+node_modules/
+.pnpm-store/
+npm-debug.log*
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+dist/
+*.tsbuildinfo
+
+# Project specific
+*.db
+*.db-journal
+.env
+
+# Data (mounted as volume at runtime)
+/data/

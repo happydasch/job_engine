@@ -1,0 +1,26 @@
+{
+  "name": "@job-engine-scrapers/scraper-bulldogjob",
+  "version": "1.0.1",
+  "private": true,
+  "type": "commonjs",
+  "description": "Scrapes BulldogJob.pl — Polish IT job board",
+  "main": "index.js",
+  "dependencies": {
+    "@job-engine-scrapers/core": "^1.0.0"
+  },
+  "keywords": [
+    "job-scraper",
+    "bulldogjob",
+    "job-automation"
+  ],
+  "jobEngine": {
+    "displayName": "BulldogJob",
+    "capabilities": [
+      "api"
+    ],
+    "needsBrowser": false,
+    "dataRichness": "low",
+    "category": "polish",
+    "homepage": ""
+  }
+}

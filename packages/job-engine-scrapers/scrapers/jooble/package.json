@@ -1,0 +1,21 @@
+{
+  "name": "@job-engine-scrapers/scraper-jooble",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "main": "index.js",
+  "dependencies": {
+    "@job-engine-scrapers/core": "1.0.0"
+  },
+  "jobEngine": {
+    "displayName": "Jooble",
+    "capabilities": [
+      "fetch"
+    ],
+    "needsBrowser": false,
+    "dataRichness": "low",
+    "category": "global",
+    "homepage": ""
+  },
+  "description": "Scrapes Jooble — global job aggregator"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@job-engine-scrapers/scraper-simplyhired",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "main": "index.js",
+  "dependencies": {
+    "@job-engine-scrapers/core": "^1.0.0"
+  },
+  "jobEngine": {
+    "displayName": "SimplyHired",
+    "capabilities": [
+      "browser"
+    ],
+    "needsBrowser": true,
+    "dataRichness": "medium",
+    "category": "global",
+    "homepage": ""
+  },
+  "description": "Scrapes SimplyHired — global job search aggregator"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "@job-engine-scrapers/scraper-remoteok",
+  "version": "1.0.1",
+  "private": true,
+  "type": "commonjs",
+  "description": "Scrapes Remote OK — remote-first tech job board",
+  "main": "index.js",
+  "dependencies": {
+    "@job-engine-scrapers/core": "^1.0.0"
+  },
+  "keywords": [
+    "job-scraper",
+    "remoteok",
+    "job-automation"
+  ],
+  "jobEngine": {
+    "displayName": "Remote OK",
+    "capabilities": [
+      "browser"
+    ],
+    "needsBrowser": true,
+    "dataRichness": "high",
+    "category": "remote",
+    "homepage": ""
+  }
+}

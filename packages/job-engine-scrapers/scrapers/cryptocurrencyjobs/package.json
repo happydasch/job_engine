@@ -1,0 +1,26 @@
+{
+  "name": "@job-engine-scrapers/scraper-cryptocurrencyjobs",
+  "version": "1.0.1",
+  "private": true,
+  "type": "commonjs",
+  "description": "Scrapes CryptocurrencyJobs.co — crypto and blockchain engineering roles",
+  "main": "index.js",
+  "dependencies": {
+    "@job-engine-scrapers/core": "^1.0.0"
+  },
+  "keywords": [
+    "job-scraper",
+    "cryptocurrencyjobs",
+    "job-automation"
+  ],
+  "jobEngine": {
+    "displayName": "CryptocurrencyJobs",
+    "capabilities": [
+      "fetch"
+    ],
+    "needsBrowser": false,
+    "dataRichness": "medium",
+    "category": "crypto",
+    "homepage": ""
+  }
+}

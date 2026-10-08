@@ -1,0 +1,53 @@
+# ══════════════════════════════════════════════════════════════
+# Profile Template — copy to data/my_profile.yaml and fill in
+# ══════════════════════════════════════════════════════════════
+
+name: "Your Name"
+role: "Your desired role / title (e.g. Senior Backend Developer)"
+experience_years: 5
+
+rate:
+  min_monthly: 0          # Minimum expected monthly salary (gross)
+  max_monthly: 0          # Maximum expected monthly salary (gross)
+  currency: USD           # USD | EUR | GBP | PLN
+
+# ── Skills ────────────────────────────────────────────────────
+# Group by category. The scorer checks overlap with job requirements.
+skills:
+  languages:
+    - "your first language"
+    - "your second language"
+  tools:
+    - "tool or technology category 1"
+    - "tool or technology category 2"
+  frameworks:
+    - "framework or library 1"
+    - "framework or library 2"
+
+# ── Boosted Keywords ──────────────────────────────────────────
+# Extra weighting applied when these appear in job descriptions.
+boosted_keywords:
+  - "keyword1"
+  - "keyword2"
+
+# ── Critical Categories ───────────────────────────────────────
+# Skills in these categories get a matching bonus during scoring.
+critical_categories: []
+
+# ── Preferences ───────────────────────────────────────────────
+preferences:
+  remote_only: false
+  preferred_locations: []
+  excluded_companies: []
+
+# ── Behavioral Keywords ──────────────────────────────────────
+# Personality / work style traits that appear in job descriptions.
+behavioral_keywords: []
+
+# ── Career Goals ──────────────────────────────────────────────
+# Keywords describing your career trajectory / aspirations.
+career_goals: []
+
+# ── Output Language ───────────────────────────────────────────
+# Language used for LLM-generated cover letters and analysis.
+language: "en"

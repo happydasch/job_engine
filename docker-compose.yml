@@ -1,0 +1,41 @@
+name: job-engine
+
+services:
+  dashboard:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    ports:
+      - "${PORT:-8000}:8000"
+    environment:
+      - DATA_DIR=/app/data
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+      - PORT=8000
+      - JOB_ENGINE_ROOT=/app
+      - PYTHONUNBUFFERED=1
+      - SCRAPER_NO_SANDBOX=1
+      - SCRAPER_TIMEOUT_MS=${SCRAPER_TIMEOUT_MS:-300000}
+      - SCRAPER_STEALTH_LEVEL=${SCRAPER_STEALTH_LEVEL:-balanced}
+    volumes:
+      - job_engine_data:/app/data
+    networks:
+      - job-engine-net
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+volumes:
+  job_engine_data:
+    driver: local
+    driver_opts:
+      type: none
+      device: ./data
+      o: bind
+
+networks:
+  job-engine-net:
+    driver: bridge

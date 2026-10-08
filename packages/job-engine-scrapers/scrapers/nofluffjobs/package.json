@@ -1,0 +1,26 @@
+{
+  "name": "@job-engine-scrapers/scraper-nofluffjobs",
+  "version": "1.0.1",
+  "private": true,
+  "type": "commonjs",
+  "description": "Scrapes NoFluffJobs — Polish IT job board with salary transparency and benefits",
+  "main": "index.js",
+  "dependencies": {
+    "@job-engine-scrapers/core": "^1.0.0"
+  },
+  "keywords": [
+    "job-scraper",
+    "nofluffjobs",
+    "job-automation"
+  ],
+  "jobEngine": {
+    "displayName": "NoFluffJobs",
+    "capabilities": [
+      "api"
+    ],
+    "needsBrowser": false,
+    "dataRichness": "high",
+    "category": "polish",
+    "homepage": ""
+  }
+}

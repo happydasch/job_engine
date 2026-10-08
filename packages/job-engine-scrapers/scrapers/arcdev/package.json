@@ -1,0 +1,21 @@
+{
+  "name": "@job-engine-scrapers/scraper-arcdev",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "main": "index.js",
+  "dependencies": {
+    "@job-engine-scrapers/core": "1.0.0"
+  },
+  "jobEngine": {
+    "displayName": "Arc.dev",
+    "capabilities": [
+      "fetch"
+    ],
+    "needsBrowser": false,
+    "dataRichness": "high",
+    "category": "remote",
+    "homepage": "https://arc.dev/remote-jobs"
+  },
+  "description": "Scrapes arc.dev/remote-jobs — Arc Exclusive remote developer roles via SSR __NEXT_DATA__"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@job-engine-scrapers/scraper-cryptojobslist",
+  "version": "1.0.1",
+  "private": true,
+  "type": "commonjs",
+  "main": "index.js",
+  "dependencies": {
+    "@job-engine-scrapers/core": "1.0.0"
+  },
+  "jobEngine": {
+    "displayName": "CryptoJobsList",
+    "capabilities": [
+      "api"
+    ],
+    "needsBrowser": false,
+    "dataRichness": "high",
+    "category": "crypto",
+    "homepage": ""
+  },
+  "description": "Scrapes cryptojobslist.com — curated crypto/blockchain jobs"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@job-engine-scrapers/scraper-googlejobs",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "main": "index.js",
+  "dependencies": {
+    "@job-engine-scrapers/core": "^1.0.0"
+  },
+  "jobEngine": {
+    "displayName": "Google Jobs",
+    "capabilities": [
+      "browser"
+    ],
+    "needsBrowser": true,
+    "dataRichness": "medium",
+    "category": "global",
+    "homepage": ""
+  },
+  "description": "Scrapes Google Jobs search results for tech roles"
+}

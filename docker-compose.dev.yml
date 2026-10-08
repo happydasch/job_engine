@@ -1,0 +1,18 @@
+# Development override for docker compose.
+# Enables hot-reload (FastAPI auto-restart) and source code mounts so changes
+# take effect without rebuilding.
+#
+# Usage:
+#   make docker-up              # production mode (no override)
+#   make docker-dev             # runs with this override (hot-reload)
+
+services:
+  dashboard:
+    # Mount source code for hot-reload (no rebuild needed on Python changes)
+    volumes:
+      - ./packages/job-engine-core/src:/app/packages/job-engine-core/src
+      - ./packages/job-engine-dashboard/src:/app/packages/job-engine-dashboard/src
+      - ./packages/job-engine-scrapers:/app/packages/job-engine-scrapers
+      - ./config:/app/config
+      - ./scripts:/app/scripts
+    command: ["uvicorn", "dashboard.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload", "--reload-dir", "/app/packages"]

@@ -1,0 +1,31 @@
+{
+  "name": "job-engine-scrapers",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "description": "Config-driven job scrapers — installable scraper packages",
+  "license": "MIT",
+  "author": "Daniel",
+  "scripts": {
+    "postinstall": "npx playwright install chromium",
+    "scrape": "node run.js",
+    "preview": "node core/config.js --preview",
+    "test": "node --test ./tests/test-*.js ./tests/scrapers/test-*.js",
+    "test:core": "node --test ./tests/test-core-*.js ./tests/scrapers/test-scraper-interface.js ./tests/scrapers/test-registry.js",
+    "test:scrapers": "node --test ./tests/scrapers/test-scrapers-module.js ./tests/scrapers/test-*.js",
+    "create-scraper": "node create-scraper.mjs"
+  },
+  "workspaces": [
+    "core",
+    "../../config/active-scrapers/*"
+  ],
+  "dependencies": {
+    "@job-engine-scrapers/core": "file:./core",
+    "cheerio": "^1.2.0",
+    "js-yaml": "^5.2.1",
+    "playwright": "^1.55.0",
+    "playwright-extra": "^4.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "undici": "^7.28.0"
+  }
+}
